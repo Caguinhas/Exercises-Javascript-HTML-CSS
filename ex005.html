@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Sozinho</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+
+        window.alert('Bem vindo ao programa')
+
+        var num1 = Number(window.prompt(`Digite um número`))
+        var num2 = Number(window.prompt(`Digite outro número`))
+
+        var soma = num1 + num2
+        var sub = num1 - num2
+        var multi = num1 * num2
+        var divi = num1 / num2
+        var resto = num1 % num2
+        var pot = num1 ** num2
+
+        document.write(`A soma dos números é igual a ${soma}.</br></br> A subtração é igual a ${sub}.</br></br> A multiplicação é igual a ${multi}.</br></br>
+        A divisão é igual a ${divi.toFixed(2)}.</br></br> O resto da divisão é igual a ${resto}.</br></br> E o resultado da pontenciação é igual a ${pot}.</br></br>`)
+        
+
+        var a1 = num1==num2 || num1!=num2
+        var a2 = num1<=num2 && num2>num1
+        var a3 = num1+num2==22 ? 'Acertou' : 'Errou'
+        
+        document.write(a1 + '</br></br>')
+        document.write(a2 + '</br></br>')
+        document.write(a3 + '</br></br>')
+
+    </script>
+    
+</body>
+</html>
